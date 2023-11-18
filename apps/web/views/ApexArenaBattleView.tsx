@@ -89,9 +89,6 @@ const ApexArenaBattleView = () => {
     return () => clearTimeout(timer);
   }, [selectedID, time, gameRecord]);
 
-  console.log(data);
-  console.log(gameRecord);
-
   return (
     <>
       <div className="flex lg:hidden justify-center items-center bg-[url('/assets/apex-arena/countdown-window/apex-game-bg.png')] bg-no-repeat bg-cover bg-center h-[58.8rem] relative">
@@ -107,7 +104,7 @@ const ApexArenaBattleView = () => {
             <>
               <ApexArenaResultView
                 isWin={gameRecord?.[1]}
-                reward={ethers.formatEther(gameRecord?.[2] || 0)}
+                reward={gameRecord?.[2].toString() ?? 0}
               />
             </>
           ) : (

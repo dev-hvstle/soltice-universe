@@ -1,7 +1,13 @@
 "use client";
+import useMounted from "@/hooks/useMounted";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 export const ConnectWallet = () => {
+  const { hasMounted } = useMounted();
+
+  if (!hasMounted) {
+    return null;
+  }
   return (
     <ConnectButton.Custom>
       {({

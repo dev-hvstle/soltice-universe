@@ -71,10 +71,6 @@ const NFTSection = () => {
     }
   }
 
-  useEffect(() => {
-    console.log(selectedName);
-  }, [selectedName]);
-
   return (
     <div className="flex justify-center items-center pb-[4rem]">
       <div className="flex flex-wrap gap-8 justify-start items-center max-w-[90rem] grow px-4">

@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { ConnectWallet } from "../ConnectWallet";
 import GameModalSection from "./GameModalSection";
 import TestnetMarquee from "./TestnetMarquee";
+import LoreSolticeUniverse from "@/views/LoreSolticeUniverse";
 
 const navigation = [
   {
@@ -30,6 +31,7 @@ const HeaderLanding = () => {
 
   return (
     <>
+      <LoreSolticeUniverse />
       <div className="fixed top-0 w-full flex flex-col justify-center items-center z-[999] bg-cNeutral-100">
         <TestnetMarquee />
         <div

@@ -9,6 +9,7 @@ import { useAccount, useContractRead, Address, useBalance } from "wagmi";
 import { GameABI, TimePotionABI } from "@/lib/abi";
 import ethers from "ethers";
 import TimePotion from "./TimePotion";
+import useMounted from "@/hooks/useMounted";
 
 const navigation = [
   {
@@ -25,6 +26,7 @@ const navigation = [
 
 const Header = () => {
   const { address } = useAccount();
+  const { hasMounted } = useMounted();
 
   const pathname = usePathname();
 
@@ -32,6 +34,7 @@ const Header = () => {
     address: "0x6D9a9a7b347273AacF26099D9fDc4130c08E4b1E",
     abi: GameABI,
     functionName: "getEnergy",
+    args: [address as Address],
   });
 
   const { data: balance } = useBalance({
@@ -43,6 +46,10 @@ const Header = () => {
 
   if (pathname !== "/apex-arena" && pathname !== "/apex-arena/battle")
     return <HeaderLanding />;
+
+  if (!hasMounted) {
+    return null;
+  }
 
   return (
     <div
@@ -121,7 +128,7 @@ const Header = () => {
                   (cn("font-[spacegrotesk]"), "text-base font-bold uppercase")
                 }
               >
-                {energy.toString() || 0}/10
+                {energy?.toString() ?? 0}/10
               </h1>
             </div>
           </div>

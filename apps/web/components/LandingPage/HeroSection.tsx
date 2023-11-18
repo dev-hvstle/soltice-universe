@@ -11,10 +11,10 @@ const HeroSection = () => {
         <div className="flex flex-col h-full justify-end max-w-[90rem] grow px-4">
           <div className="flex flex-col gap-8">
             <div className="flex flex-col gap-4">
-              <h1 className="text-cNeutral-100 text-2xl sm:text-5xl lg:text-8xl font-[trispace] font-semibold">
+              <h1 className="text-cNeutral-100 text-2xl sm:text-5xl lg:text-6xl font-[trispace] font-semibold uppercase">
                 Join the
                 <br />
-                Soltice Universe
+                Soltice Universe: Time Decay
               </h1>
               <h1 className="font-[spacegrotesk] text-2xl font-medium text-cNeutral-100">
                 Your journey starts here.

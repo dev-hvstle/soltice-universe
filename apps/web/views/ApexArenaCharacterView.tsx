@@ -122,7 +122,7 @@ const ApexArenaCharacterView = () => {
         modules={[Pagination, Navigation]}
         className="relative w-[300px] sm:ww-[600px] md:w-[700px]"
         onSwiper={(s) => {
-          console.log("initialize swiper", s);
+          // console.log("initialize swiper", s);
           setSwiper(s);
         }}
         breakpoints={{
