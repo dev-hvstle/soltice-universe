@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#0a0a0a];
+  }
+}
+
+@font-face {
+  font-family: switzer;
+  src: url(../fonts/Switzer-Regular.otf);
+}
+
+@font-face {
+  font-family: trispace;
+  src: url(../fonts/trispace.ttf);
+}
+
+@font-face {
+  font-family: spacegrotesk;
+  src: url(../fonts/space-grotesk.ttf);
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.mask-design {
+  border-radius: 40px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.faded-corners {
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 20%,
+    transparent 100%
+  );
+}
+
+.faded-edgesv2 {
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 2%,
+    rgba(0, 0, 0, 1) 16%,
+    rgba(0, 0, 0, 1) 90%,
+    transparent 100%
+  );
+}
+
+.apex-arena {
+  text-align: center;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #6d5873;
+  background: linear-gradient(180deg, #f5e2de 22.13%, #eed7da 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  line-height: normal;
+  text-shadow: 0px 8px 0px #224569;
+}
+
+.subTitle {
+  text-align: center;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #6d5873;
+  text-shadow: 0px 4px 0px #224569;
+  font-style: normal;
+  line-height: normal;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 300px;
+  height: 100%;
+}
+
+/* slides */
+
+.swiper-pagination-bullet {
+  background-color: #ffffff !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ea2899 !important;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #0a0f11;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #0a0f11;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0a0f11;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.2) 75%,
+    transparent 75%,
+    transparent
+  );
+}
+
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.reverse-floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+  delay: 0.3s;
+}
+
+@keyframes revese-floating {
+  0% {
+    transform: translate(0, 15px);
+  }
+  50% {
+    transform: translate(0, 0px);
+  }
+  100% {
+    transform: translate(0, -15px);
+  }
+}
+
+.timer-text {
+  text-align: center;
+  text-shadow: 0px 16px 0px #224569;
+}
+
+.apex-arena-small {
+  text-align: center;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #6d5873;
+  background: linear-gradient(180deg, #f5e2de 22.13%, #eed7da 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  line-height: normal;
+  text-shadow: 0px 4px 0px #224569;
+}
+
+.apex-arena-med {
+  text-align: center;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #6d5873;
+  background: linear-gradient(180deg, #f5e2de 22.13%, #eed7da 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  line-height: normal;
+  text-shadow: 0px 6px 0px #224569;
+}
