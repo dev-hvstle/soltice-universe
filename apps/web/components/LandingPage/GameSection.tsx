@@ -8,18 +8,22 @@ const GameSection = () => {
       name: "Apex Arena",
       imgUrl: "/assets/landing-page/apex-arena-game.png",
       linkUrl: "/apex-arena",
+      className:
+        "hover:border-[#fff] box-content border-2 duration-200 ease-in-out",
     },
     {
       id: 2,
       name: "Equinox Circuit",
       imgUrl: "/assets/landing-page/equinox-circuit-game.png",
       linkUrl: "/#coming-soon",
+      className: "grayscale cursor-not-allowed",
     },
     {
       id: 3,
       name: "Sun Sweeper",
       imgUrl: "/assets/landing-page/sun-sweeper-game.png",
       linkUrl: "/#coming-soon",
+      className: "cursor-not-allowed",
     },
   ];
 
@@ -47,7 +51,7 @@ const GameSection = () => {
                   alt={data.name}
                   height={240}
                   width={427}
-                  className="w-full max-w-[427px] duration-200 ease-in-out box-border border-4 hover:border-[#ffffff]"
+                  className={`w-full max-w-[427px] ${data.className}`}
                 />
               </a>
             );

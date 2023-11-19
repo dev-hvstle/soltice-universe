@@ -29,7 +29,7 @@ const BringYourFriends = () => {
           <p className="flex flex-col items-center justify-center gap-4 text-cNeutral-100 font-[spacegrotesk] text-base text-center">
             <span>
               By referring your friends to the Soltice Universe, you have the
-              opportunity to earn a 20% commission on their Rare Mushroom ($TPN)
+              opportunity to earn a 20% commission on their Time Potion ($TPN)
               earnings.
             </span>
             <span>

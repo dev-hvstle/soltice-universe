@@ -92,7 +92,7 @@ const PurchaseButton = () => {
       {isApproved ? (
         <button
           onClick={handleOnSubmit}
-          className={`py-4 px-8 rounded-2xl font-[switzer] w-full font-bold uppercase ${
+          className={`py-4 px-8 rounded-2xl font-[spacegrotesk] w-full font-bold uppercase ${
             !isLoading
               ? "text-cNeutral-900 bg-[#2DE481]"
               : "bg-[#FFFFFF1A] text-cNeutral-100/50"
@@ -105,7 +105,7 @@ const PurchaseButton = () => {
           <button
             disabled={isLoadingApprove}
             onClick={handleOnApproved}
-            className={`py-4 px-8 rounded-2xl font-[switzer] w-full font-bold uppercase ${
+            className={`py-4 px-8 rounded-2xl font-[spacegrotesk] w-full font-bold uppercase ${
               !isLoadingApprove
                 ? "text-cNeutral-900 bg-cNeutral-100"
                 : "bg-[#FFFFFF1A] text-cNeutral-100/50"

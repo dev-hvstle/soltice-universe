@@ -61,25 +61,25 @@ const DashboardView = () => {
 
   return (
     <section
-      className="flex flex-col justify-center items-center pt-[10rem] py-[2rem] h-auto"
+      className="flex flex-col justify-start items-center pt-[10rem] py-[2rem] h-auto gap-8"
       id="dashboard-section"
     >
-      <div className="flex h-auto flex-col py-3 lg:py-2 gap-5 max-w-[95rem] px-[1rem] lg:px-[4rem] w-full">
-        <h1 className="font-[switzer] tracking-wide text-2xl sm:text-6xl text-left lg:text-5xl mb-2 text-cNeutral-100">
+      <div className="flex h-auto flex-col py-3 lg:py-2 gap-5 max-w-[95rem] px-[1rem] w-full">
+        <h1 className="font-[spacegrotesk] tracking-wide text-2xl sm:text-6xl text-left lg:text-5xl mb-2 text-cNeutral-100">
           Dashboard
         </h1>
       </div>
 
-      <div className="flex h-auto flex-col gap-2 max-w-[90rem] px-[1rem] lg:px-[4rem] w-full">
-        <h1 className="font-[switzer] tracking-wide text-2xl  text-left md:text-3xl text-cNeutral-100">
+      <div className="flex h-auto flex-col gap-2 max-w-[90rem] w-full">
+        <h1 className="font-[spacegrotesk] tracking-wide text-2xl  text-left md:text-3xl text-cNeutral-100">
           Inventory
         </h1>
-        <h1 className="font-[switzer] text-xl text-[#7a7a7a] text-left md:text-2xl">
+        <h1 className="font-[spacegrotesk] text-xl text-[#7a7a7a] text-left md:text-2xl">
           Choose your Soltice to merge.
         </h1>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-center items-center max-w-[90rem] gap-11">
+      <div className="flex flex-col w-full md:flex-row justify-center items-center max-w-[90rem] gap-10">
         <div
           style={{
             borderColor: "#36f1e6",
@@ -89,17 +89,17 @@ const DashboardView = () => {
           className={`flex flex-col items-center justify-end gap-2 w-[200px] max-w-[180px] min-h-[250px] px-5 py-5 cursor-pointer `}
         >
           <Image
-            src={"/assets/dashboard/time-potion.png"}
+            src={"/assets/dashboard/time-potion2.png"}
             className="pointer-events-none select-none mb-2"
             alt="text"
             width={40}
             height={40}
           />
           <span>
-            <h1 className="font-[switzer] tracking-wide text-xl text-left md:text-1xl text-[#8cd531]">
-              99,999 RRM
+            <h1 className="font-[spacegrotesk] tracking-wide text-xl text-left md:text-1xl text-[#8cd531]">
+              99,999 $TPN
             </h1>
-            <p className="font-[switzer]  text-left tracking-widest text-md text-[#7a7a7a]">
+            <p className="font-[spacegrotesk]  text-left tracking-widest text-md text-[#7a7a7a]">
               remaining
             </p>
           </span>
@@ -117,7 +117,7 @@ const DashboardView = () => {
           pagination={true}
           spaceBetween={10}
           thumbs={{ swiper: thumbsSwiper }}
-          className="relative w-[300px] sm:ww-[600px] md:w-[700px]"
+          className="relative w-[300px] sm:ww-[600px] md:w-[700px] grow"
           id="side-anim-right-features"
           breakpoints={{
             375: {
@@ -154,22 +154,22 @@ const DashboardView = () => {
           {inventorydata.map((item) => {
             return (
               <SwiperSlide
-                className="mySwiperTeam-slide-v2 select-none w-auto py-2"
+                className="mySwiperTeam-slide-v2 select-none w-auto"
                 key={item.id}
               >
                 <div
-                  className={`flex flex-col items-center justify-end gap-2 w-[200px] max-w-[180px] min-h-[250px] px-5 py-5 rounded-xl ${item.background} cursor-pointer  hover-button`}
+                  className={`flex flex-col items-center justify-center min-h-fit rounded-xl ${item.background} cursor-pointer p-4 hover-button`}
                 >
                   <Image
                     src={item.imgUrl}
-                    className="pointer-events-none select-none xsm:max-h-[550px] w-auto xsm:max-w-[400px]"
+                    className="pointer-events-none select-none w-64"
                     alt="text"
                     height={400}
                     width={400}
                   />
 
                   <span>
-                    <h1 className="font-[switzer] tracking-wide text-xl  text-left md:text-xl text-cNeutral-100">
+                    <h1 className="font-[spacegrotesk] tracking-wide text-xl  text-left md:text-xl text-cNeutral-100">
                       {item.name}
                     </h1>
                   </span>

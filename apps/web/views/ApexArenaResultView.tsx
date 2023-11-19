@@ -42,7 +42,7 @@ const ApexArenaResultView = ({ isWin, reward }: any) => {
             "font-bold text-[48px] text-[#f4e7e5] apex-arena-med")
           }
         >
-          {reward} $TPT
+          {isWin ? "1200" : "150"} $TPT
         </h1>
       </div>
       <button

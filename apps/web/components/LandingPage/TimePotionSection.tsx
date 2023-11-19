@@ -19,22 +19,20 @@ const TimePotionSection = () => {
             Time Potion $TPN
           </h1>
           <p className="lg:text-right text-cNeutral-100 text-base font-medium font-[spacegrotesk]">
-            The Rare Mushroom serves as the in-game BEP-20 token within the
+            The Time Potion serves as the in-game BEP-20 token within the
             Soltice Universe. This asset can be utilized to level up your
-            Soltice monster and is obtainable through various adventurous
-            activities.
+            Soltice and is obtainable through various adventurous activities.
           </p>
 
           <p className="flex flex-col gap-2 lg:text-right text-cNeutral-100 text-base font-medium font-[spacegrotesk]">
             <span>TAXATION:</span>
             <span>
-              The Rare Mushroom serves as the in-game BEP-20 token within the
+              The Time Potion serves as the in-game BEP-20 token within the
               Soltice Universe. This asset can be utilized to level up your
-              Soltice monster and is obtainable through various adventurous
-              activities.
+              Soltice and is obtainable through various adventurous activities.
             </span>
             <span>
-              Rare Mushroom (TPN) is subject to a taxation rate of 4%, which is
+              Time Potion (TPN) is subject to a taxation rate of 4%, which is
               distributed as follows: 1% is allocated to the team wallet, 1% to
               the development wallet, and 2% is directed towards liquidity.
             </span>

@@ -9,7 +9,7 @@ import {
   useNetwork,
   useSwitchNetwork,
 } from "wagmi";
-import { USDTABI } from "@/lib/abi";
+import { USDTABI, TimePotionABI } from "@/lib/abi";
 import FaceIcon from "@/public/icons/face-icon.svg";
 
 const TestnetMarquee = () => {
@@ -28,8 +28,8 @@ const TestnetMarquee = () => {
     useContractWrite(configUSDT);
 
   const { config: configTPN } = usePrepareContractWrite({
-    address: "0x91d3100E6Ef656FCB9ecEe9f9ac3Ca2DDC1910e3",
-    abi: USDTABI,
+    address: "0xbcc9F7E989aE209d611fAb5d3A05e8795F224cD2",
+    abi: TimePotionABI,
     functionName: "mint",
     args: [account, BigInt(1000000000000000000000)],
   });
@@ -106,7 +106,7 @@ const TestnetMarquee = () => {
                         <span className="flex items-center gap-2">
                           {isLoadingUsdt
                             ? "Claiming..."
-                            : "10,000 Tether Peg Token ($USDT)"}
+                            : "1,000 Tether Peg Token ($USDT)"}
                         </span>
                       </button>
                       <button
@@ -117,7 +117,7 @@ const TestnetMarquee = () => {
                         <span className="flex items-center gap-2">
                           {isLoadingTPN
                             ? "Claiming..."
-                            : "10,000 Tether Peg Token ($TPN)"}
+                            : "1,000 Time Potion Token ($TPN)"}
                         </span>
                       </button>
                     </div>

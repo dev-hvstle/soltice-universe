@@ -77,7 +77,7 @@ const ApexArenaNFTView = () => {
                         className="rounded-lg"
                       />
                       <div className="flex flex-col md:flex-row justify-between items-center w-full gap-2">
-                        <h1 className="text-white font-medium text-lg">
+                        <h1 className="text-white font-medium text-lg font-[spacegrotesk]">
                           {data.title}
                         </h1>
                       </div>

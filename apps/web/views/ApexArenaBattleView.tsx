@@ -49,13 +49,15 @@ const ApexArenaBattleView = () => {
     functionName: "users",
     args: [address as Address],
   });
-  const data: any = dataUser;
+  const datauser: any = dataUser;
+
+  console.log(datauser?.[3]);
 
   const { data: dataRecord } = useContractRead({
     address: "0x6D9a9a7b347273AacF26099D9fDc4130c08E4b1E",
     abi: GameABI,
     functionName: "gameRecord",
-    args: [address as Address, data[3]],
+    args: [address as Address, datauser?.[3]],
   });
 
   const {

@@ -8,13 +8,13 @@ const PurchaseView = () => {
   return (
     <div className="flex justify-center items-center pt-[8rem] pb-[2rem]">
       <div className="flex flex-col max-w-[75rem] gap-6 grow px-4">
-        <h1 className="text-cNeutral-100 font-[switzer] text-2xl sm:text-5xl font-bold">
+        <h1 className="text-cNeutral-100 font-[spacegrotesk] text-2xl sm:text-5xl font-bold">
           Purchase
         </h1>
 
         <div className="flex flex-wrap justify-between items-center gap-8 px-0 sm:px-8">
           <div className="flex flex-col gap-4">
-            <h1 className="font-[switzer] text-cNeutral-100 font-bold text-xl sm:text-[32px]">
+            <h1 className="font-[spacegrotesk] text-cNeutral-100 font-bold text-xl sm:text-[32px]">
               Sparky the starter Soltice!
             </h1>
 
@@ -32,11 +32,11 @@ const PurchaseView = () => {
               <PurchaseCard
                 imgUrl={"/icons/max-win-icon.svg"}
                 title={"Win Win: "}
-                subTitle={"4,000.00 RRM"}
+                subTitle={"4,000.00 $TPN"}
               />
             </div>
 
-            <h1 className="text-base font-[switzer] text-cNeutral-100">
+            <h1 className="text-base font-[spacegrotesk] text-cNeutral-100">
               Only <span className="font-bold">12,345</span> / 20,000 available
             </h1>
 
